@@ -24,7 +24,7 @@ h1 {
 
 h2 {
 	font-family: "Roboto", Helvetica, Arial, sans-serif;
-	color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
 	font-weight: bold;
 	font-size: 3rem;
 }
@@ -391,7 +391,7 @@ height: 100%;
 }
 
 #aboveLine {
-  color: #000000;
+  color: #ffffff;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 28px;
   font-weight: 400;
@@ -612,8 +612,9 @@ height: 100%;
 
 .aboutDescRight
 {
-	margin-right: 330px;
-	text-align: right;
+	width: 550px;
+  text-align: left;
+  margin-left: 1085px;
 }
 
 /* Aligns text within border to the left */
@@ -696,6 +697,42 @@ height: 100%;
 	flex-wrap: wrap;
 }
 
+/* Contact Page Styling */
+#contactInfoDiv {
+/*color:#000000;*/
+margin-left: 20px;
+padding: 3%;
+}
+
+#contactInfoInnerDiv {
+margin-right: 10px;
+}
+
+#mobile {
+  display: none;
+}
+
+#desktop {
+  display: inline;
+}
+
+.mapCenter {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+input, textarea {
+  display: block;
+  margin-bottom: 2em;
+    /*! color: white;  */
+}
+
+form {
+padding: 10%;
+}
+
+/* Footer Styling */
 .footer {
   padding: 10px;
   text-align: center;
