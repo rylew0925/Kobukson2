@@ -6,6 +6,8 @@
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link href="css/turtle_home.css" rel="stylesheet" />
+   <link href="turtle_icons.js" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -26,29 +28,67 @@
    </nav>
 
       <div id="contactInfoDiv">
+         <div id="address">
          <p><strong>Kobukson</strong></p>
          <p><strong><i>612 Serenity Way</i></strong></p>
-         <p><strong><i>El Dorado, AZ 86336</i></strong></p>
+         <p><strong><i>El Dorado, AZ 86336</i></strong></p>      
          <div id="contactInfoInnerDiv">
             <a id="mobile" href="tel:888-555-5555">888-555-5555</a>
-            <span id="desktop">888-555-5555</span>
             <p>Email: <a href="mailto:Richard@Lew.com">Richard@Lew.com</a></p>
          </div>
       </div>
+         </div>       
 
       <img class="mapCenter" src="cafeMap.png" alt="Image of Coffee House map" width="600" height="400">
-      <form method="post" action="http://webdevbasics.net/scripts/demo.php">
-         Name: <input type="text" name="myName" id="myName" placeholder="Name">
-         Email: <input type="email" name="myEmail" id="myEmail" placeholder="Email">
-         Phone: <input type="tel" name="myPhone" id="myPhone" placeholder="Phone">
-         Comments: <textarea name="myComments" id="myComments" rows="2" cols="40" required="required" placeholder="your comments here"></textarea>
-         <input type="submit" value="Submit">
-      </form>
       
-       <div id="drinkLine">
-         <hr>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <div id="form">
+         <form method="post" action="http://webdevbasics.net/scripts/demo.php">
+            <p>Name:</p> <input type="text" name="myName" id="myName" placeholder="Name">
+            <p>Email:</p> <input type="email" name="myEmail" id="myEmail" placeholder="Email">
+            <p>Phone:</p> <input type="tel" name="myPhone" id="myPhone" placeholder="Phone">
+            <p>Comments:</p> <textarea name="myComments" id="myComments" rows="2" cols="40" required="required" placeholder="your comments here"></textarea>
+            <input type="submit" value="Submit">
+         </form>
       </div>
 
+
+      
+     <div id="line">
+    <hr>
+  </div>    
+
+<div class="footer">
+    <p>Follow Us</p>
+
+    <i class="fa fa-yelp" style="font-size:48px;color:red"></i>
+    &nbsp;
+    <i class="fa fa-facebook-official" style="font-size:48px;color:blue"></i>
+  </div>
+
+<!--
+<div class="footer">
+<footer>       
+
+ <p class="follow">Follow us</p>
+  <ul data-social-icons>
+    <li data-social-icon="facebook"></li>
+    <li data-social-icon="twitter"></li>
+    <li data-social-icon="gplus"></li>
+    <li data-social-icon="linkedin"></li>
+    <li data-social-icon="youtube"></li>
+  </ul>
+</p>
+</footer>
+</div>
+-->
+
+
+      <!--
       <footer>
          <span>	Zero Lag Cafe © 2021 English (US) </span>
          <span> 
@@ -59,9 +99,13 @@
     &nbsp;
     <i class="fa fa-facebook-official" style="font-size:48px;color:blue"></i>
       </footer>
+   -->
       <!--REQUIRED: Richard Lew audio, 12-14–20 -->
-	  <audio controls autoplay>
+	  <!--
+     <audio controls autoplay>
 		 <source src="Sounds/background_music.mp3" type="audio/mp3">
 	  </audio>
+   </div>
+-->
    </body>
 </html>

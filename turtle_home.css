@@ -630,6 +630,7 @@ height: 100%;
 
 .giveSpaceLeftTwo {
 	margin-right: 10px;
+}
 
 .giveSpaceRight {
 	margin-right: 10px;
@@ -709,10 +710,6 @@ margin-right: 10px;
 }
 
 #mobile {
-  display: none;
-}
-
-#desktop {
   display: inline;
 }
 
@@ -729,7 +726,14 @@ input, textarea {
 }
 
 form {
-padding: 10%;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto; 
+}
+
+#contactInfoDiv #address {
+  margin-left: 2%;
 }
 
 /* Footer Styling */
@@ -743,4 +747,136 @@ padding: 10%;
   margin: 0 0 1.75em;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200);
+
+@icon-size: 120px;
+@font: 'Raleway';
+@color: white;
+
+* {
+  transition: all 30ms ease-out;
+  font-family: @font;
+}
+
+[data-social-icons] {
+  display: flex;
+  position: absolute;
+  list-style-type: none;
+  padding: 0;
+  padding-bottom: 20px;
+  margin: 0;
+  width: 625px;
+  left: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  margin-top: 1800px;  
+  li {
+    line-height: @icon-size;
+    width: @icon-size;
+    font-size: @icon-size * .7;
+    text-align: center;
+    font-family: @font;
+    font-weight: 100;
+    color: @color;
+    float: left;
+    margin-right: 5px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &:hover [data-social-icon] {
+    background-color: gray;
+    opacity: .7;
+  }
+  [data-social-icon] {
+    &:hover {
+      cursor: pointer;
+      animation-name: hover-anim;
+      animation-duration: 100ms;
+      animation-timing-function: ease-out;
+      animation-iteration-count: 2;
+    }
+  }
+  [data-social-icon~=facebook],
+  [data-social-icon~=facebook]:hover {
+    background-color: rgb(67,96,156);
+    opacity: 1;
+    &:before {
+      content: "F";
+    }
+  }
+  [data-social-icon~=twitter],
+  [data-social-icon~=twitter]:hover {
+    background-color: rgb(83,167,231);
+    opacity: 1;
+    &:before {
+      content: "T";
+    }
+  }
+  [data-social-icon~=gplus],
+  [data-social-icon~=gplus]:hover {
+    background-color: rgb(217,82,50);
+    opacity: 1;
+    &:before {
+      content: "G";
+    }
+  }
+  [data-social-icon~=linkedin],
+  [data-social-icon~=linkedin]:hover {
+    background-color: rgb(2,116,179);
+    opacity: 1;
+    &:before {
+      content: "L";
+    }
+  }
+  [data-social-icon~=youtube],
+  [data-social-icon~=youtube]:hover {
+    background-color: rgb(236,40,42);
+    opacity: 1;
+    &:before {
+      content: "Y";
+    }
+  }
+}
+
+@keyframes hover-anim {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.follow {
+  display: flex;
+  position: absolute;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 625px;
+  left: 50%; 
+  top: 50%;
+  margin-top: 1700px;
+  font-size: 2.5em;
+  font-weight: 100;
+  text-align: center;
+  &.facebook:after {
+    content: ' on Facebook';
+  }
+  &.twitter:after {
+    content: ' on Twitter';
+  }
+  &.gplus:after {
+    content: ' on Google+';
+  }
+  &.linkedin:after {
+    content: ' on LinkedIn';
+  }
+  &.youtube:after {
+    content: ' on YouTube';
+  }
 }
